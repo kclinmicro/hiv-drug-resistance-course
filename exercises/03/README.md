@@ -1,5 +1,8 @@
+# Run the nf-core/viralrecon pipeline
 
 In Exercise 2, you used `sierra-local` to predict HIV drug resistance from a consensus sequence. In this exercise, you will start with sequencing reads and run HIV drug-resistance analysis as part of the `nf-core/viralrecon` Nextflow pipeline.
+
+This instruction was written for GitHub Codespaces. To run the pipeline locally, install Docker or Conda, then replace `singularity` in the `-profile` argument with `docker` or `conda`. respectively.
 
 The HIV drug-resistance workflow used in this exercise is available on the `dev` branch. Karolinska Institutet, Karolinska University Laboratory, and the Bioinformatics Unit of Instituto de Salud Carlos III collaborated on the integration. [Sarai Varona](https://github.com/svarona) and [Lili Andersson-Li](https://github.com/LilyAnderssonLee) carried out the original work.
 
@@ -19,7 +22,7 @@ The pipeline's test dataset retains **0.02%** of the original reads from each sa
 
 ## Run the analysis with the `test_hiv` profile
 
-The `test_hiv` profile provides the sample sheet and parameters for this exercise. Both commands below use Docker, so make sure Docker is running before you start.
+The `test_hiv` profile provides the sample sheet and parameters for this exercise. Both commands below use Singularity, so make sure Singularity is running before you start.
 
 1. From the `hiv` directory you created in Exercise 1, activate the Pixi environment. If the environment is already active, continue to the next step.
 

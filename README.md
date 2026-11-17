@@ -9,22 +9,33 @@ Project repo for following course on bioinformatics for for HIV drug-resistance 
 These exercises requires you to have access to a Linux computer. This could be
 one of:
 
-1. On Linux: If you have a locally installed Linux, preferrably based on Debian
-   or Ubuntu, you should be able to use it as is.
-2. On Macs: Ubuntu (or similar, like Linux Mint), running in a Virtual Machine
-   like [UTM](https://getutm.app/) (easy option) or [Lima](https://lima-vm.io/)
-   (more powerful but slightly harder to set up).
-3. On Windows: Debian or Ubuntu-based image in [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/).
-4. As a backup, you can also use the cloud-based [GitHub codespaces](https://github.com/codespaces),
-   which is very easy to get started with, if you have a GitHub account.
+**Linux users**
+Users who run Linux, can run the installation steps on their local computer without extra changes.
 
-For more detailed instructions on all of these options, see
-[this section in the course page](https://learning.ecdc.europa.eu/mod/page/view.php?id=45425).
+**Windows users**
+For people using Windows, we recommend installing and using the Windows Subsystem for Linux. See [What is WSL](https://learn.microsoft.com/en-us/windows/wsl/about), and [How to install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+**Mac users**
+For people using Mac, [install Docker](https://docs.docker.com/desktop/setup/install/mac-install/) if you plan to run the exercises on your local computer.
+
+**Backup or alternative solution: GitHub codespaces**
+If you for some reason do not have access to a native Linux environment, you can use the free tier of GitHub Codespaces, where you get access to a small virtual Linux environment with 2-4 cores and 8-16 GB of RAM, for free, for a smaller amount of CPU hours.
+
+Preparation: For this you will need to create a GitHub account!
+
+To use GitHub codespaces for the exercises, you can:
+
+Log in to your GitHub account
+Go to the [GitHub codespaces page](https://github.com/codespaces)
+Under the "Blank" template, click "Use this template"
+Now, in a minute or two, you will have a Visual Studio Code instance running in your browser, with access to the files. Inside the Terminal window, you can run the Linux commands in the exercises.
+
+Remember to close the instance when it is not used, to save available CPU hours (Press Ctrl+Shift+P in the VSCode environment, and search for "stop codespace").
 
 ## Exercises
 
-For the exercises, see the `exercises/` folder here in the repository, or the
-links below:
+You can find the exercises in the `exercises/` folder in this repository or follow the links below.
+The instructions were written for GitHub Codespaces. To run the `exercises/03` locally, install Docker or Conda.
 
 1. [Exercise 1: Installation](https://github.com/kclinmicro/hiv-drug-resistance-course/tree/main/exercises/01)
 3. [Exercise 2: Run sierra-local and check the HIV drug resistance database](https://github.com/kclinmicro/hiv-drug-resistance-course/tree/main/exercises/02)
