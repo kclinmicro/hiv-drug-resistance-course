@@ -25,9 +25,10 @@ Preparation: For this you will need to create a GitHub account!
 
 To use GitHub codespaces for the exercises, you can:
 
-Log in to your GitHub account
-Go to the [GitHub codespaces page](https://github.com/codespaces)
-Under the "Blank" template, click "Use this template"
+- Log in to your GitHub account
+- Go to the [GitHub codespaces page](https://github.com/codespaces)
+- Under the "Blank" template, click "Use this template"
+
 Now, in a minute or two, you will have a Visual Studio Code instance running in your browser, with access to the files. Inside the Terminal window, you can run the Linux commands in the exercises.
 
 Remember to close the instance when it is not used, to save available CPU hours (Press Ctrl+Shift+P in the VSCode environment, and search for "stop codespace").
