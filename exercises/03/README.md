@@ -2,7 +2,7 @@
 
 In Exercise 2, you used `sierra-local` to predict HIV drug resistance from a consensus sequence. In this exercise, you will start with sequencing reads and run HIV drug-resistance analysis as part of the `nf-core/viralrecon` Nextflow pipeline.
 
-This instruction was written for GitHub Codespaces. To run the pipeline locally, install Docker or Conda, then replace `singularity` in the `-profile` argument with `docker` or `conda`. respectively.
+These instructions were written for GitHub Codespaces. To run the pipeline locally, install Docker or Conda, then replace `singularity` in the `-profile` argument with `docker` or `conda`, respectively.
 
 The HIV drug-resistance workflow used in this exercise is available on the `dev` branch. Karolinska Institutet, Karolinska University Laboratory, and the Bioinformatics Unit of Instituto de Salud Carlos III collaborated on the integration. [Sarai Varona](https://github.com/svarona) and [Lili Andersson-Li](https://github.com/LilyAnderssonLee) carried out the original work.
 
@@ -42,8 +42,8 @@ The `test_hiv` profile provides the sample sheet and parameters for this exercis
 3. Create a working directory and clone the `dev` branch of the pipeline. Run the remaining commands from inside the cloned `viralrecon` directory.
 
    ```bash
-   mkdir -p exercise2
-   cd exercise2
+   mkdir -p exercise3
+   cd exercise3
    git clone --branch dev https://github.com/nf-core/viralrecon.git
    cd viralrecon
    ```
@@ -81,6 +81,23 @@ The `test_hiv` profile provides the sample sheet and parameters for this exercis
    ```
 
    Allow about 20 minutes for the analysis. The runtime depends on your environment.
+
+   **Use the updated HIVdb files**
+
+   The commands above use the default HIVdb files bundled with `sierra-local`. To use the files you updated in Exercise 2, provide their paths as pipeline parameters:
+
+   ```bash
+   nextflow run main.nf -profile test_hiv,singularity \
+       --outdir results_test -c custom.config \
+       --hivdb_xml ../../exercise2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
+       --apobec_drm ../../exercise2/sierra-local/sierralocal/data/apobec_drms.json \
+       --apobec_csv ../../exercise2/sierra-local/sierralocal/data/apobecs.csv \
+       --unusual_csv ../../exercise2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
+       --sdrms_csv ../../exercise2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
+       --mutation_csv ../../exercise2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
+   ```
+
+   These paths assume you saved the updated HIVdb files in `exercise2/sierra-local/sierralocal/data`, as described in Exercise 2. Adjust the paths and XML filename if you used a different location or downloaded a different HIVdb version.
 
 6. To resume a run, repeat the same command from the same directory and add `-resume`. Nextflow reuses results from completed tasks when their cache entries and outputs are still available. [How Nextflow resume works](https://seqera.io/blog/demystifying-nextflow-resume/)
 

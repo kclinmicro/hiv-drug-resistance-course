@@ -1,0 +1,26 @@
+﻿Sample_name,Gene_name,Drug_class,Drug_abbr,Drug_name,Total_score,Res_status
+DRR030302,PR,PI,ATV/r,atazanavir/r,0,Susceptible
+DRR030302,PR,PI,DRV/r,darunavir/r,0,Susceptible
+DRR030302,PR,PI,FPV/r,fosamprenavir/r,0,Susceptible
+DRR030302,PR,PI,IDV/r,indinavir/r,0,Susceptible
+DRR030302,PR,PI,LPV/r,lopinavir/r,0,Susceptible
+DRR030302,PR,PI,NFV,nelfinavir,0,Susceptible
+DRR030302,PR,PI,SQV/r,saquinavir/r,0,Susceptible
+DRR030302,PR,PI,TPV/r,tipranavir/r,0,Susceptible
+DRR030302,RT,NRTI,ABC,abacavir,0,Susceptible
+DRR030302,RT,NRTI,AZT,zidovudine,0,Susceptible
+DRR030302,RT,NRTI,D4T,stavudine,0,Susceptible
+DRR030302,RT,NRTI,DDI,didanosine,0,Susceptible
+DRR030302,RT,NRTI,FTC,emtricitabine,0,Susceptible
+DRR030302,RT,NRTI,3TC,lamivudine,0,Susceptible
+DRR030302,RT,NRTI,TDF,tenofovir,0,Susceptible
+DRR030302,RT,NNRTI,DOR,doravirine,10,Potential Low-Level Resistance
+DRR030302,RT,NNRTI,EFV,efavirenz,0,Susceptible
+DRR030302,RT,NNRTI,ETR,etravirine,10,Potential Low-Level Resistance
+DRR030302,RT,NNRTI,NVP,nevirapine,10,Potential Low-Level Resistance
+DRR030302,RT,NNRTI,RPV,rilpivirine,10,Potential Low-Level Resistance
+DRR030302,IN,INSTI,BIC,bictegravir,0,Susceptible
+DRR030302,IN,INSTI,CAB,cabotegravir,0,Susceptible
+DRR030302,IN,INSTI,DTG,dolutegravir,0,Susceptible
+DRR030302,IN,INSTI,EVG,elvitegravir,0,Susceptible
+DRR030302,IN,INSTI,RAL,raltegravir,0,Susceptible

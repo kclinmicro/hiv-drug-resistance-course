@@ -54,8 +54,8 @@ For a better understanding of the HIV drug-resistance testing database, we need 
 
     ```bash
     cd ..
-    mkdir -p exercise1
-    cd exercise1
+    mkdir -p exercise2
+    cd exercise2
     ```
 
 2. Clone the sierra-local repo:

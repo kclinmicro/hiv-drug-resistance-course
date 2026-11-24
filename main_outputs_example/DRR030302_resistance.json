@@ -1,0 +1,1145 @@
+[
+  {
+    "inputSequence": {
+      "header": "Consensus_DRR030302.consensus_threshold_0.9_quality_30",
+      "SHA512": "ec36a1e133ac53f0fdc5d16f563ea7cf148037a82e7c46946664c1e773891492ac967b2db6fd40e443bddc4433e633a0e724b058d36e9a6a05d90cd1583b9cfd"
+    },
+    "subtypeText": "",
+    "validationResults": [],
+    "alignedGeneSequences": [
+      {
+        "firstAA": 1,
+        "lastAA": 99,
+        "gene": {
+          "name": "PR",
+          "length": null
+        },
+        "mutations": [
+          {
+            "consensus": "I",
+            "position": 13,
+            "AAs": "V",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I13V"
+          },
+          {
+            "consensus": "I",
+            "position": 62,
+            "AAs": "V",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I62V"
+          },
+          {
+            "consensus": "L",
+            "position": 63,
+            "AAs": "P",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "L63P"
+          },
+          {
+            "consensus": "I",
+            "position": 64,
+            "AAs": "V",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I64V"
+          },
+          {
+            "consensus": "T",
+            "position": 74,
+            "AAs": "A",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "T74A"
+          },
+          {
+            "consensus": "V",
+            "position": 77,
+            "AAs": "I",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V77I"
+          }
+        ],
+        "SDRMs": []
+      },
+      {
+        "firstAA": 1,
+        "lastAA": 560,
+        "gene": {
+          "name": "RT",
+          "length": null
+        },
+        "mutations": [
+          {
+            "consensus": "V",
+            "position": 35,
+            "AAs": "IT",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V35TI"
+          },
+          {
+            "consensus": "T",
+            "position": 39,
+            "AAs": "AT",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "T39TA"
+          },
+          {
+            "consensus": "V",
+            "position": 106,
+            "AAs": "IV",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "NNRTI",
+            "text": "V106IV"
+          },
+          {
+            "consensus": "D",
+            "position": 123,
+            "AAs": "E",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "D123E"
+          },
+          {
+            "consensus": "I",
+            "position": 135,
+            "AAs": "T",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I135T"
+          },
+          {
+            "consensus": "S",
+            "position": 162,
+            "AAs": "C",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "S162C"
+          },
+          {
+            "consensus": "I",
+            "position": 178,
+            "AAs": "IM",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I178IM"
+          },
+          {
+            "consensus": "R",
+            "position": 211,
+            "AAs": "KR",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "R211KR"
+          },
+          {
+            "consensus": "T",
+            "position": 286,
+            "AAs": "AT",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "T286TA"
+          },
+          {
+            "consensus": "A",
+            "position": 288,
+            "AAs": "AT",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "A288TA"
+          },
+          {
+            "consensus": "P",
+            "position": 294,
+            "AAs": "PS",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "P294PS"
+          },
+          {
+            "consensus": "P",
+            "position": 313,
+            "AAs": "PST",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "P313TPS"
+          },
+          {
+            "consensus": "H",
+            "position": 315,
+            "AAs": "HQ",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "H315QH"
+          },
+          {
+            "consensus": "V",
+            "position": 317,
+            "AAs": "A",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V317A"
+          },
+          {
+            "consensus": "I",
+            "position": 329,
+            "AAs": "L",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I329L"
+          },
+          {
+            "consensus": "M",
+            "position": 357,
+            "AAs": "T",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "M357T"
+          },
+          {
+            "consensus": "R",
+            "position": 358,
+            "AAs": "KR",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "R358KR"
+          },
+          {
+            "consensus": "A",
+            "position": 400,
+            "AAs": "T",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "A400T"
+          },
+          {
+            "consensus": "V",
+            "position": 435,
+            "AAs": "AE",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V435EA"
+          },
+          {
+            "consensus": "G",
+            "position": 436,
+            "AAs": "E",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "G436E"
+          },
+          {
+            "consensus": "E",
+            "position": 449,
+            "AAs": "DE",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "E449ED"
+          },
+          {
+            "consensus": "K",
+            "position": 451,
+            "AAs": "R",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "K451R"
+          },
+          {
+            "consensus": "L",
+            "position": 452,
+            "AAs": "T",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "L452T"
+          },
+          {
+            "consensus": "D",
+            "position": 460,
+            "AAs": "N",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "D460N"
+          },
+          {
+            "consensus": "R",
+            "position": 461,
+            "AAs": "K",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "R461K"
+          },
+          {
+            "consensus": "V",
+            "position": 467,
+            "AAs": "I",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V467I"
+          },
+          {
+            "consensus": "Q",
+            "position": 480,
+            "AAs": "E",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "Q480E"
+          },
+          {
+            "consensus": "Q",
+            "position": 487,
+            "AAs": "K",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "Q487K"
+          },
+          {
+            "consensus": "L",
+            "position": 491,
+            "AAs": "S",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "L491S"
+          }
+        ],
+        "SDRMs": []
+      },
+      {
+        "firstAA": 1,
+        "lastAA": 289,
+        "gene": {
+          "name": "IN",
+          "length": null
+        },
+        "mutations": [
+          {
+            "consensus": "E",
+            "position": 11,
+            "AAs": "D",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "E11D"
+          },
+          {
+            "consensus": "K",
+            "position": 14,
+            "AAs": "R",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "K14R"
+          },
+          {
+            "consensus": "V",
+            "position": 31,
+            "AAs": "I",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V31I"
+          },
+          {
+            "consensus": "S",
+            "position": 39,
+            "AAs": "C",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "S39C"
+          },
+          {
+            "consensus": "S",
+            "position": 57,
+            "AAs": "N",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "S57N"
+          },
+          {
+            "consensus": "I",
+            "position": 84,
+            "AAs": "M",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "I84M"
+          },
+          {
+            "consensus": "L",
+            "position": 101,
+            "AAs": "I",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "L101I"
+          },
+          {
+            "consensus": "S",
+            "position": 119,
+            "AAs": "T",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "S119T"
+          },
+          {
+            "consensus": "T",
+            "position": 125,
+            "AAs": "AT",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "T125TA"
+          },
+          {
+            "consensus": "V",
+            "position": 201,
+            "AAs": "I",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "V201I"
+          },
+          {
+            "consensus": "T",
+            "position": 206,
+            "AAs": "S",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "T206S"
+          },
+          {
+            "consensus": "K",
+            "position": 215,
+            "AAs": "N",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "K215N"
+          },
+          {
+            "consensus": "S",
+            "position": 230,
+            "AAs": "N",
+            "isInsertion": false,
+            "isDeletion": false,
+            "isApobecMutation": false,
+            "isApobecDRM": false,
+            "isUnusual": false,
+            "isSDRM": false,
+            "hasStop": false,
+            "primaryType": "Other",
+            "text": "S230N"
+          }
+        ],
+        "SDRMs": []
+      }
+    ],
+    "drugResistance": [
+      {
+        "version": {
+          "text": "9.4",
+          "publishDate": "2022-12-07"
+        },
+        "gene": {
+          "name": "PR"
+        },
+        "drugScores": [
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "ATV",
+              "displayAbbr": "ATV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "DRV",
+              "displayAbbr": "DRV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "FPV",
+              "displayAbbr": "FPV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "IDV",
+              "displayAbbr": "IDV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "LPV",
+              "displayAbbr": "LPV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "NFV",
+              "displayAbbr": "NFV"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "SQV",
+              "displayAbbr": "SQV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "PI"
+            },
+            "drug": {
+              "name": "TPV",
+              "displayAbbr": "TPV/r"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          }
+        ]
+      },
+      {
+        "version": {
+          "text": "9.4",
+          "publishDate": "2022-12-07"
+        },
+        "gene": {
+          "name": "RT"
+        },
+        "drugScores": [
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "ABC",
+              "displayAbbr": "ABC"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "AZT",
+              "displayAbbr": "AZT"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "D4T",
+              "displayAbbr": "D4T"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "DDI",
+              "displayAbbr": "DDI"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "FTC",
+              "displayAbbr": "FTC"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "LMV",
+              "displayAbbr": "3TC"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NRTI"
+            },
+            "drug": {
+              "name": "TDF",
+              "displayAbbr": "TDF"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            },
+            "drug": {
+              "name": "DOR",
+              "displayAbbr": "DOR"
+            },
+            "score": 10,
+            "level": 2,
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "V106IV",
+                    "primaryType": "Other",
+                    "triggeredAAs": "I",
+                    "comments": [
+                      {
+                        "type": "Other",
+                        "text": "V106I occurs in 1% to 2% of viruses from untreated persons. It contributes to reduced NNRTI susceptibility only in combination with other NNRTI-resistance mutations. It is commonly selected in persons receiving DOR in combination with mutations at position 227."
+                      }
+                    ]
+                  }
+                ],
+                "score": 10.0
+              }
+            ],
+            "text": "Potential Low-Level Resistance"
+          },
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            },
+            "drug": {
+              "name": "EFV",
+              "displayAbbr": "EFV"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            },
+            "drug": {
+              "name": "ETR",
+              "displayAbbr": "ETR"
+            },
+            "score": 10,
+            "level": 2,
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "V106IV",
+                    "primaryType": "Other",
+                    "triggeredAAs": "I",
+                    "comments": [
+                      {
+                        "type": "Other",
+                        "text": "V106I occurs in 1% to 2% of viruses from untreated persons. It contributes to reduced NNRTI susceptibility only in combination with other NNRTI-resistance mutations. It is commonly selected in persons receiving DOR in combination with mutations at position 227."
+                      }
+                    ]
+                  }
+                ],
+                "score": 10.0
+              }
+            ],
+            "text": "Potential Low-Level Resistance"
+          },
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            },
+            "drug": {
+              "name": "NVP",
+              "displayAbbr": "NVP"
+            },
+            "score": 10,
+            "level": 2,
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "V106IV",
+                    "primaryType": "Other",
+                    "triggeredAAs": "I",
+                    "comments": [
+                      {
+                        "type": "Other",
+                        "text": "V106I occurs in 1% to 2% of viruses from untreated persons. It contributes to reduced NNRTI susceptibility only in combination with other NNRTI-resistance mutations. It is commonly selected in persons receiving DOR in combination with mutations at position 227."
+                      }
+                    ]
+                  }
+                ],
+                "score": 10.0
+              }
+            ],
+            "text": "Potential Low-Level Resistance"
+          },
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            },
+            "drug": {
+              "name": "RPV",
+              "displayAbbr": "RPV"
+            },
+            "score": 10,
+            "level": 2,
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "V106IV",
+                    "primaryType": "Other",
+                    "triggeredAAs": "I",
+                    "comments": [
+                      {
+                        "type": "Other",
+                        "text": "V106I occurs in 1% to 2% of viruses from untreated persons. It contributes to reduced NNRTI susceptibility only in combination with other NNRTI-resistance mutations. It is commonly selected in persons receiving DOR in combination with mutations at position 227."
+                      }
+                    ]
+                  }
+                ],
+                "score": 10.0
+              }
+            ],
+            "text": "Potential Low-Level Resistance"
+          }
+        ]
+      },
+      {
+        "version": {
+          "text": "9.4",
+          "publishDate": "2022-12-07"
+        },
+        "gene": {
+          "name": "IN"
+        },
+        "drugScores": [
+          {
+            "drugClass": {
+              "name": "INSTI"
+            },
+            "drug": {
+              "name": "BIC",
+              "displayAbbr": "BIC"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "INSTI"
+            },
+            "drug": {
+              "name": "CAB",
+              "displayAbbr": "CAB"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "INSTI"
+            },
+            "drug": {
+              "name": "DTG",
+              "displayAbbr": "DTG"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "INSTI"
+            },
+            "drug": {
+              "name": "EVG",
+              "displayAbbr": "EVG"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          },
+          {
+            "drugClass": {
+              "name": "INSTI"
+            },
+            "drug": {
+              "name": "RAL",
+              "displayAbbr": "RAL"
+            },
+            "score": 0,
+            "level": 1,
+            "partialScores": [],
+            "text": "Susceptible"
+          }
+        ]
+      }
+    ]
+  }
+]
