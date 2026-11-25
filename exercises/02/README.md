@@ -4,12 +4,13 @@
 
 ## sierra-local arguments
 
-1. Actiavte the pixi environment installed in the previous analysis
+1. Start in the `ex1` folder created in Exercise 1. If you are continuing directly from that exercise, you are already there. Otherwise, navigate to `ex1` first. Activate the Pixi environment if it is not already active:
 
     ```bash
-    cd hiv/
     pixi shell
     ```
+
+    If your prompt already shows `(ex1)`, skip this command.
 
 2. Check the arguments of `sierra-local`.
    The default HIV database used for the analysis is not the latest. You can either pre-download the latest database and provide it as an argument, or you can use the `--forceupdate` argument to update the database to the latest version during the analysis.
@@ -48,39 +49,38 @@
 ## HIV drug resistance database
 
 The database used by `sierra-local` is originally from [Stanford HIVdb](https://hivdb.stanford.edu/hivdb/by-patterns/).
-For a better understanding of the HIV drug-resistance testing database, we need to clone the `sierral-local` repository locally.
+For a better understanding of the HIV drug-resistance testing database, we need to clone the `sierra-local` repository locally.
 
-1. Create a folder for your exercise outside of the pixi environment:
+1. From `ex1`, create a folder for Exercise 2 alongside it. Keep the Pixi environment active; changing folders does not deactivate it:
 
     ```bash
     cd ..
-    mkdir -p exercise2
-    cd exercise2
+    mkdir -p ex2
+    cd ex2
     ```
 
-2. Clone the sierra-local repo:
+2. Clone the sierra-local repository at release tag `v0.4.4`
 
     ```bash
-    git clone https://github.com/PoonLab/sierra-local.git
+    git clone --branch v0.4.4 https://github.com/PoonLab/sierra-local.git
     ```
 
-3. Download the latest HIVdb and save it to the `sierralocal/data` folder. You can also re-direct the output to a different folder
-    with the `-update_outdir` argument, if you want to save it somewhere else.
+3. Download the latest HIVdb and save it to the `sierralocal/data` folder. You can also re-direct the output to a different folder with the `-updater_outdir` argument, if you want to save it somewhere else.
 
     ```bash
     python sierra-local/sierralocal/updater.py
     ```
 
-    This will save output in the `sierralocal/data` folder.
+    This will save output in the `sierra-local/sierralocal/data` folder.
 
 4. Check the latest HIVdb in the `sierra-local/sierralocal/data` folder on the left side of the window.
 
-    Some files are hardcoded in `sierra-local`, but the following files can be updated to the latest version:
+    Some files are hardcoded in `sierra-local v0.4.4`, but the following files can be updated to the latest version:
 
-    ```bash
+    ```text
     HIVDB_10.2.xml                  - XML file containing the HIVdb algorithm.
     apobec_drms.json                - JSON file containing the APOBEC DRM data.
-    apobec.csv                      - CSV file containing the APOBEC mutations.
+    apobecs.csv                      - CSV file containing the APOBEC mutations.
     mutation-type-pairs_hiv1.csv    - CSV file containing the mutation type pairs.
     rx-all_subtype-all.csv          - CSV file containing the unusual mutations.
     sdrms_hiv1.csv                  - CSV file containing the SDRM mutations.
@@ -96,7 +96,7 @@ For a better understanding of the HIV drug-resistance testing database, we need 
     ```
 
 2. Run `sierra-local`. For usage of `sierra-local`, you can either check the
-   online [tutorial](https://github.com/PoonLab/sierra-local/tree/dev) or check
+   online [tutorial](https://github.com/PoonLab/sierra-local/tree/v0.4.4) or check
    the `README.md` file in the cloned sierra-local repository. There are two
    ways to run `sierra-local`:
 
@@ -121,8 +121,12 @@ For a better understanding of the HIV drug-resistance testing database, we need 
 3. View the result JSON file on the left side of the window or in the terminal with the `less` command:
 
     ```bash
-    less -S RT_results_v1.json
+    less -S RT_results.json
     ```
+
+The `-S` option prevents long lines from wrapping. Use the left and right arrow keys to scroll horizontally, and press `q` to quit.
+
+At the end of this exercise, your working directory is `ex2/sierra-local`, and the Pixi environment is still active.
 
 ## Take home messages
 
@@ -131,4 +135,4 @@ scoring algorithm using the consensus sequence data.
 
 `sierra-local` uses the HIVdb database originally from [Stanford HIVdb](https://github.com/hivdb/hivfacts/tree/main/data)
 
-Always remember to update the database to the latest version for your analysis.
+Use the latest database for new analyses, or the original version when reproducing previous results. Always record the version used.

@@ -33,6 +33,10 @@ Now, in a minute or two, you will have a Visual Studio Code instance running in 
 
 Remember to close the instance when it is not used, to save available CPU hours (Press Ctrl+Shift+P in the VSCode environment, and search for "stop codespace").
 
+**Recommended editor: Visual Studio Code**
+
+We will use Visual Studio Code (VS Code) during the course demonstrations to run commands, edit files, and explore results. GitHub Codespaces includes VS Code in the browser. If you are working locally, we recommend installing [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/overview).
+
 ## Exercises
 
 You can find the exercises in the `exercises/` folder in this repository or follow the links below.
