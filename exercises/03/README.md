@@ -164,6 +164,10 @@ The `-L 2` option limits the display to two directory levels.
 
 Congratulations on completing the exercise! Give yourself a round of applause!
 
+## Take-home messages
+
+You have learned how to run the `nf-core/viralrecon` pipeline for HIV drug-resistance testing and provide updated HIVdb files on the command line.
+
 ## Bonus
 
 The bonus tips below can help you use `nf-core/viralrecon` in future analyses.
