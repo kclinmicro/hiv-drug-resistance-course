@@ -22,47 +22,25 @@ The pipeline's test dataset retains **0.02%** of the original reads from each sa
 
 ## Run the analysis with the `test_hiv` profile
 
-The `test_hiv` profile provides the sample sheet and parameters for this exercise. Step 5 provides commands for both Singularity and Docker. Use Singularity for GitHub Codespaces, Linux, or Windows with WSL, or Docker for macOS.
+The `test_hiv` profile provides the sample sheet and parameters for this exercise. Step 3 provides commands for both Singularity and Docker. Use Singularity for GitHub Codespaces, Linux, or Windows with WSL, or Docker for macOS.
 
-1. Return to the `ex1` folder containing `pixi.toml`. If you are continuing directly from Exercise 2, your current directory is `ex2/sierra-local`, so run:
-
-   ```bash
-   cd ../../ex1
-   ```
-
-   If you are starting in a new terminal, navigate to `ex1` from your chosen working directory instead.
-
-2. Activate the Pixi environment if it is not already active. If your prompt already shows `(ex1)`, skip this command.
+1. Create a working directory and run the remaining commands from `ex3`, outside the cloned `viralrecon` directory.
 
    ```bash
-   pixi shell
-   ```
-
-   Check the Singularity installation from Exercise 1:
-
-   ```bash
-   singularity --version
-   ```
-
-   If you are using Docker locally, skip only the Singularity check and continue with the steps below. Make sure Docker Desktop is running.
-
-   After activating the environment, move up one directory so you can create `ex3` alongside `ex1`. Keep the Pixi environment active for the rest of the exercise.
-
-   ```bash
-   cd ..
-   ```
-
-3. Create a working directory and clone the `dev` branch of the pipeline. Run the remaining commands from `ex3`, outside the cloned `viralrecon` directory.
-
-   ```bash
-   mkdir -p ex3
+   cd ../..
+   mkdir ex3
    cd ex3
+   ```
+
+2. Clone the `dev` branch of `nf-core/viralrecon`. The `hiv` profile is currently available on the `dev` branch and is expected to be included in a release before Christmas.
+
+   ```bash
    git clone --branch dev https://github.com/nf-core/viralrecon.git
    ```
 
    The profile's settings are in [`conf/test_hiv.config`](https://github.com/nf-core/viralrecon/blob/dev/conf/test_hiv.config).
 
-4. If you are using GitHub Codespaces, create `custom.config` to limit the CPU, memory, and time available to each task.
+3. If you are using GitHub Codespaces, create `custom.config` to limit the CPU, memory, and time available to each task.
 
    ```bash
    cat > custom.config <<'CONFIG'
@@ -78,14 +56,21 @@ The `test_hiv` profile provides the sample sheet and parameters for this exercis
 
    If your environment has sufficient resources, you can skip this step and delete `-c custom.config` from the command you choose below.
 
-5. Choose one of the following commands. Both use the `test_hiv` profile and write results to `results_test/`.
+4. Choose one of the following commands. Both use the `test_hiv` profile and write results to `results_test/`.
 
    Run the local checkout you cloned in step 3:
 
    **GitHub Codespaces, Linux, or Windows with WSL — Singularity**
 
    ```bash
-   nextflow run viralrecon/main.nf -profile test_hiv,singularity --outdir results_test -c custom.config
+    nextflow run viralrecon/main.nf -profile test_hiv,singularity \
+       --outdir results_test -c custom.config \
+       --hivdb_xml ../ex2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
+       --apobec_drm ../ex2/sierra-local/sierralocal/data/apobec_drms.json \
+       --apobec_csv ../ex2/sierra-local/sierralocal/data/apobecs.csv \
+       --unusual_csv ../ex2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
+       --sdrms_csv ../ex2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
+       --mutation_csv ../ex2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
    ```
 
    **macOS — Docker**
@@ -93,7 +78,14 @@ The `test_hiv` profile provides the sample sheet and parameters for this exercis
    Make sure Docker Desktop is running.
 
    ```bash
-   nextflow run viralrecon/main.nf -profile test_hiv,docker --outdir results_test -c custom.config
+    nextflow run viralrecon/main.nf -profile test_hiv,docker \
+       --outdir results_test -c custom.config \
+       --hivdb_xml ../ex2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
+       --apobec_drm ../ex2/sierra-local/sierralocal/data/apobec_drms.json \
+       --apobec_csv ../ex2/sierra-local/sierralocal/data/apobecs.csv \
+       --unusual_csv ../ex2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
+       --sdrms_csv ../ex2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
+       --mutation_csv ../ex2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
    ```
 
    If you skipped creating `custom.config`, delete `-c custom.config` from the command you choose.
@@ -101,46 +93,19 @@ The `test_hiv` profile provides the sample sheet and parameters for this exercis
    Alternatively, you can run the pipeline directly from GitHub by replacing `viralrecon/main.nf` with `nf-core/viralrecon -r dev` in either command above. For example, with Singularity:
 
    ```bash
-   nextflow run nf-core/viralrecon -r dev -profile test_hiv,singularity --outdir results_test -c custom.config
+    nextflow run viralrecon/main.nf -profile test_hiv,singularity \
+       --outdir results_test -c custom.config \
+       --hivdb_xml ../ex2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
+       --apobec_drm ../ex2/sierra-local/sierralocal/data/apobec_drms.json \
+       --apobec_csv ../ex2/sierra-local/sierralocal/data/apobecs.csv \
+       --unusual_csv ../ex2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
+       --sdrms_csv ../ex2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
+       --mutation_csv ../ex2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
    ```
 
    Using `custom.config`, the analysis took approximately 10 minutes on a local Mac and 20 minutes in GitHub Codespaces. Runtime may vary depending on the computer and available resources.
 
-   **Use the updated HIVdb files**
-
-   The commands above use the default HIVdb files bundled with `sierra-local`. To use the files you updated in Exercise 2, provide their paths as pipeline parameters:
-
-   **GitHub Codespaces, Linux, or Windows with WSL — Singularity**
-
-   ```bash
-   nextflow run viralrecon/main.nf -profile test_hiv,singularity \
-       --outdir results_test -c custom.config \
-       --hivdb_xml ../ex2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
-       --apobec_drm ../ex2/sierra-local/sierralocal/data/apobec_drms.json \
-       --apobec_csv ../ex2/sierra-local/sierralocal/data/apobecs.csv \
-       --unusual_csv ../ex2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
-       --sdrms_csv ../ex2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
-       --mutation_csv ../ex2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
-   ```
-
-   **macOS — Docker**
-
-   ```bash
-   nextflow run viralrecon/main.nf -profile test_hiv,docker \
-       --outdir results_test -c custom.config \
-       --hivdb_xml ../ex2/sierra-local/sierralocal/data/HIVDB_10.2.xml \
-       --apobec_drm ../ex2/sierra-local/sierralocal/data/apobec_drms.json \
-       --apobec_csv ../ex2/sierra-local/sierralocal/data/apobecs.csv \
-       --unusual_csv ../ex2/sierra-local/sierralocal/data/rx-all_subtype-all.csv \
-       --sdrms_csv ../ex2/sierra-local/sierralocal/data/sdrms_hiv1.csv \
-       --mutation_csv ../ex2/sierra-local/sierralocal/data/mutation-type-pairs_hiv1.csv
-   ```
-
-   If you skipped creating `custom.config`, delete `-c custom.config` from the command you choose.
-
-   These paths assume you saved the updated HIVdb files in `ex2/sierra-local/sierralocal/data`, as described in Exercise 2. Adjust the paths and XML filename if you used a different location or downloaded a different HIVdb version.
-
-6. To resume a run, repeat the same command from the same directory and add `-resume`. Nextflow reuses results from completed tasks when their cache entries and outputs are still available. [How Nextflow resume works](https://seqera.io/blog/demystifying-nextflow-resume/)
+5. To resume a run, repeat the same command from the same directory and add `-resume`. Nextflow reuses results from completed tasks when their cache entries and outputs are still available. [How Nextflow resume works](https://seqera.io/blog/demystifying-nextflow-resume/)
 
 ## Inspect the results
 
@@ -164,7 +129,7 @@ The `-L 2` option limits the display to two directory levels.
 
 Congratulations on completing the exercise! Give yourself a round of applause!
 
-## Take-home messages
+## Take home messages
 
 You have learned how to run the `nf-core/viralrecon` pipeline for HIV drug-resistance testing and provide updated HIVdb files on the command line.
 

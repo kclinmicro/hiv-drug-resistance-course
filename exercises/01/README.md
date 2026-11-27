@@ -40,13 +40,6 @@ using Pixi instead of Conda, for greater speed and flexibility.
     bash
     ```
 
-3. From your chosen working directory, create a folder for Exercise 1. The later exercises will create `ex2` and `ex3` alongside `ex1`:
-
-    ```bash
-    mkdir -p ex1
-    cd ex1
-    ```
-
 4. Create a new pixi environment in this folder:
 
     ```bash
@@ -72,7 +65,7 @@ using Pixi instead of Conda, for greater speed and flexibility.
     pixi add nextflow=25.10.4 sierra-local=0.4.4 python=3.10 tree singularity
     ```
 
-    This command includes Singularity for Linux, WSL, and GitHub Codespaces. If you are running locally on a Mac, omit `singularity` and use Docker for Exercise 3.
+    This command includes Singularity for Linux, WSL, and GitHub Codespaces. If you are running locally on a **Mac**, omit `singularity` and use `Docker` for Exercise 3.
 
     (As you can see, you can specify the version by appending
     `=<version>` to a tool name).
@@ -88,12 +81,6 @@ using Pixi instead of Conda, for greater speed and flexibility.
 
     ```bash
     singularity --version
-    ```
-
-8. If you are taking a break, exit the Pixi environment with the command below. You can exit from any directory. If you are continuing directly to Exercise 2, you can keep it active. Exercise 2 starts from the `ex1` folder.
-
-    ```bash
-    exit
     ```
 
 ## Take home message
